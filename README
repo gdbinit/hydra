@@ -1,0 +1,59 @@
+                                                         dddddddd
+  HHHHHHHHH     HHHHHHHHH                                d::::::d
+  H:::::::H     H:::::::H                                d::::::d
+  H:::::::H     H:::::::H                                d::::::d
+  HH::::::H     H::::::HH                                d:::::d
+    H:::::H     H:::::Hyyyyyyy           yyyyyyy ddddddddd:::::drrrrr   rrrrrrrrr   aaaaaaaaaaaaa
+    H:::::H     H:::::H y:::::y         y:::::ydd::::::::::::::dr::::rrr:::::::::r  a::::::::::::a
+    H::::::HHHHH::::::H  y:::::y       y:::::yd::::::::::::::::dr:::::::::::::::::r aaaaaaaaa:::::a
+    H:::::::::::::::::H   y:::::y     y:::::yd:::::::ddddd:::::drr::::::rrrrr::::::r         a::::a
+    H:::::::::::::::::H    y:::::y   y:::::y d::::::d    d:::::d r:::::r     r:::::r  aaaaaaa:::::a
+    H::::::HHHHH::::::H     y:::::y y:::::y  d:::::d     d:::::d r:::::r     rrrrrrraa::::::::::::a
+    H:::::H     H:::::H      y:::::y:::::y   d:::::d     d:::::d r:::::r           a::::aaaa::::::a
+    H:::::H     H:::::H       y:::::::::y    d:::::d     d:::::d r:::::r          a::::a    a:::::a
+  HH::::::H     H::::::HH      y:::::::y     d::::::ddddd::::::ddr:::::r          a::::a    a:::::a
+  H:::::::H     H:::::::H       y:::::y       d:::::::::::::::::dr:::::r          a:::::aaaa::::::a
+  H:::::::H     H:::::::H      y:::::y         d:::::::::ddd::::dr:::::r           a::::::::::aa:::a
+  HHHHHHHHH     HHHHHHHHH     y:::::y           ddddddddd   dddddrrrrrrr            aaaaaaaaaa  aaaa
+                             y:::::y
+                            y:::::y
+                           y:::::y
+                          y:::::y
+                         yyyyyyy
+
+Copyright (c) fG!, 2012,2013 - reverser@put.as - http://reverse.put.as
+All rights reserved.
+
+Welcome,
+
+Hydra is sample code of a kernel extension that will intercept process creation, suspend, and 
+communicate it to a userland daemon that will be in charge of patching the application.
+
+Its goal is to demonstrate a process hijacking technique from the kernel and also how to use
+kernel control API. Technically all the patching could be done from the kernel extension.
+
+It can be used to crack codesign applications without touching the disk image or resigning
+the code. This is due to the fact that patching is done after code signature is verified.
+The only exception is if there are any code checksum features, either using internal functions
+or the ones from Apple code signing (not even sure if there's an API available for this).
+
+The kernel extension should be feature complete but the userland daemon implements a very
+basic example of adding a target and patching it. To be complete it needs an interface to
+add targets at request, save a configuration file with targets and patching information.
+
+The userland daemon requires task_for_pid() privileges. You will need to run it as root
+or sign it to run with debugging privileges (as gdb does). Follow this lldb document
+https://llvm.org/svn/llvm-project/lldb/trunk/docs/code-signing.txt to sign it.
+
+The only supported target for now is Mountain Lion. It's rather easy to support all OS X
+versions. In fact if the target is Lion and/or Mountain Lion, there's no need to read
+the kernel image from disk to solve symbols. They are available in memory! This applies
+if you want to make it work with Snow Leopard and below. Anyway, this code is also an 
+example about how to read/write files from a kernel extension.
+
+As usual, this is only sample code. Any usage you make out of it is your own responsibility.
+
+Have fun,
+fG!
+
+

@@ -1,0 +1,218 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B90F213166EE86B00DD5FC6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B90F212166EE86B00DD5FC6 /* main.c */; };
+		7B90F215166EE86B00DD5FC6 /* hydra_userland.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B90F214166EE86B00DD5FC6 /* hydra_userland.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B90F20C166EE86B00DD5FC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				7B90F215166EE86B00DD5FC6 /* hydra_userland.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B4E00F9168CA9DF0014D6A3 /* shared_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shared_data.h; path = ../../hydra/hydra/shared_data.h; sourceTree = "<group>"; };
+		7B90F20E166EE86B00DD5FC6 /* hydra-userland */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hydra-userland"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B90F212166EE86B00DD5FC6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7B90F214166EE86B00DD5FC6 /* hydra_userland.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = hydra_userland.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B90F20B166EE86B00DD5FC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B90F203166EE86B00DD5FC6 = {
+			isa = PBXGroup;
+			children = (
+				7B90F211166EE86B00DD5FC6 /* hydra-userland */,
+				7B90F20F166EE86B00DD5FC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B90F20F166EE86B00DD5FC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F20E166EE86B00DD5FC6 /* hydra-userland */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B90F211166EE86B00DD5FC6 /* hydra-userland */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F212166EE86B00DD5FC6 /* main.c */,
+				7B4E00F9168CA9DF0014D6A3 /* shared_data.h */,
+				7B90F214166EE86B00DD5FC6 /* hydra_userland.1 */,
+			);
+			path = "hydra-userland";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B90F20D166EE86B00DD5FC6 /* hydra-userland */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B90F218166EE86B00DD5FC6 /* Build configuration list for PBXNativeTarget "hydra-userland" */;
+			buildPhases = (
+				7B90F20A166EE86B00DD5FC6 /* Sources */,
+				7B90F20B166EE86B00DD5FC6 /* Frameworks */,
+				7B90F20C166EE86B00DD5FC6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hydra-userland";
+			productName = "hydra-userland";
+			productReference = 7B90F20E166EE86B00DD5FC6 /* hydra-userland */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B90F205166EE86B00DD5FC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Put.as;
+			};
+			buildConfigurationList = 7B90F208166EE86B00DD5FC6 /* Build configuration list for PBXProject "hydra-userland" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B90F203166EE86B00DD5FC6;
+			productRefGroup = 7B90F20F166EE86B00DD5FC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B90F20D166EE86B00DD5FC6 /* hydra-userland */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B90F20A166EE86B00DD5FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B90F213166EE86B00DD5FC6 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B90F216166EE86B00DD5FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B90F217166EE86B00DD5FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B90F219166EE86B00DD5FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B90F21A166EE86B00DD5FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B90F208166EE86B00DD5FC6 /* Build configuration list for PBXProject "hydra-userland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B90F216166EE86B00DD5FC6 /* Debug */,
+				7B90F217166EE86B00DD5FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B90F218166EE86B00DD5FC6 /* Build configuration list for PBXNativeTarget "hydra-userland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B90F219166EE86B00DD5FC6 /* Debug */,
+				7B90F21A166EE86B00DD5FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B90F205166EE86B00DD5FC6 /* Project object */;
+}

@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B4E00E2168C9D5F0014D6A3 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4E00E1168C9D5F0014D6A3 /* uthash.h */; };
+		7B88C8C7168BBF37000D6573 /* proc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B88C8C4168BBF37000D6573 /* proc.h */; };
+		7B88C8CD168BC316000D6573 /* kernel_info.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B88C8CB168BC316000D6573 /* kernel_info.c */; };
+		7B88C8CE168BC316000D6573 /* kernel_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B88C8CC168BC316000D6573 /* kernel_info.h */; };
+		7B88C8D9168BCCBA000D6573 /* cpu_protections.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B88C8D3168BCCBA000D6573 /* cpu_protections.c */; };
+		7B88C8DA168BCCBA000D6573 /* cpu_protections.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B88C8D4168BCCBA000D6573 /* cpu_protections.h */; };
+		7B88C8DB168BCCBA000D6573 /* idt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B88C8D5168BCCBA000D6573 /* idt.c */; };
+		7B88C8DC168BCCBA000D6573 /* idt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B88C8D6168BCCBA000D6573 /* idt.h */; };
+		7B88C8E1168BD887000D6573 /* suspend_proc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B88C8DF168BD887000D6573 /* suspend_proc.c */; };
+		7B88C8E2168BD887000D6573 /* suspend_proc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B88C8E0168BD887000D6573 /* suspend_proc.h */; };
+		7B88C8E5168BF216000D6573 /* kernel_control.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B88C8E3168BF216000D6573 /* kernel_control.c */; };
+		7B88C8E6168BF216000D6573 /* kernel_control.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B88C8E4168BF216000D6573 /* kernel_control.h */; };
+		7B90F1F0166ECD4E00DD5FC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B90F1EE166ECD4E00DD5FC6 /* InfoPlist.strings */; };
+		7B90F1F2166ECD4E00DD5FC6 /* hydra.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B90F1F1166ECD4E00DD5FC6 /* hydra.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B4E00E0168C9AFE0014D6A3 /* shared_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared_data.h; sourceTree = "<group>"; };
+		7B4E00E1168C9D5F0014D6A3 /* uthash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uthash.h; sourceTree = "<group>"; };
+		7B88C8C4168BBF37000D6573 /* proc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proc.h; sourceTree = "<group>"; };
+		7B88C8CA168BC1D1000D6573 /* my_data_definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_data_definitions.h; sourceTree = "<group>"; };
+		7B88C8CB168BC316000D6573 /* kernel_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_info.c; sourceTree = "<group>"; };
+		7B88C8CC168BC316000D6573 /* kernel_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_info.h; sourceTree = "<group>"; };
+		7B88C8D3168BCCBA000D6573 /* cpu_protections.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_protections.c; sourceTree = "<group>"; };
+		7B88C8D4168BCCBA000D6573 /* cpu_protections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_protections.h; sourceTree = "<group>"; };
+		7B88C8D5168BCCBA000D6573 /* idt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = idt.c; sourceTree = "<group>"; };
+		7B88C8D6168BCCBA000D6573 /* idt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idt.h; sourceTree = "<group>"; };
+		7B88C8DF168BD887000D6573 /* suspend_proc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = suspend_proc.c; sourceTree = "<group>"; };
+		7B88C8E0168BD887000D6573 /* suspend_proc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = suspend_proc.h; sourceTree = "<group>"; };
+		7B88C8E3168BF216000D6573 /* kernel_control.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_control.c; sourceTree = "<group>"; };
+		7B88C8E4168BF216000D6573 /* kernel_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_control.h; sourceTree = "<group>"; };
+		7B90F1E6166ECD4E00DD5FC6 /* hydra.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hydra.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B90F1EA166ECD4E00DD5FC6 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		7B90F1ED166ECD4E00DD5FC6 /* hydra-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hydra-Info.plist"; sourceTree = "<group>"; };
+		7B90F1EF166ECD4E00DD5FC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B90F1F1166ECD4E00DD5FC6 /* hydra.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hydra.c; sourceTree = "<group>"; };
+		7B90F1F3166ECD4E00DD5FC6 /* hydra-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hydra-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B90F1E1166ECD4E00DD5FC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B88C8C2168BBF12000D6573 /* kernel_includes */ = {
+			isa = PBXGroup;
+			children = (
+				7B88C8C4168BBF37000D6573 /* proc.h */,
+			);
+			name = kernel_includes;
+			sourceTree = "<group>";
+		};
+		7B90F1D9166ECD4E00DD5FC6 = {
+			isa = PBXGroup;
+			children = (
+				7B90F1EB166ECD4E00DD5FC6 /* hydra */,
+				7B90F1E8166ECD4E00DD5FC6 /* Frameworks */,
+				7B90F1E7166ECD4E00DD5FC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B90F1E7166ECD4E00DD5FC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F1E6166ECD4E00DD5FC6 /* hydra.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B90F1E8166ECD4E00DD5FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F1E9166ECD4E00DD5FC6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B90F1E9166ECD4E00DD5FC6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F1EA166ECD4E00DD5FC6 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7B90F1EB166ECD4E00DD5FC6 /* hydra */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F1F1166ECD4E00DD5FC6 /* hydra.c */,
+				7B88C8DF168BD887000D6573 /* suspend_proc.c */,
+				7B88C8E0168BD887000D6573 /* suspend_proc.h */,
+				7B88C8CB168BC316000D6573 /* kernel_info.c */,
+				7B88C8CC168BC316000D6573 /* kernel_info.h */,
+				7B88C8E3168BF216000D6573 /* kernel_control.c */,
+				7B88C8E4168BF216000D6573 /* kernel_control.h */,
+				7B88C8D3168BCCBA000D6573 /* cpu_protections.c */,
+				7B88C8D4168BCCBA000D6573 /* cpu_protections.h */,
+				7B88C8D5168BCCBA000D6573 /* idt.c */,
+				7B88C8D6168BCCBA000D6573 /* idt.h */,
+				7B88C8CA168BC1D1000D6573 /* my_data_definitions.h */,
+				7B4E00E0168C9AFE0014D6A3 /* shared_data.h */,
+				7B4E00E1168C9D5F0014D6A3 /* uthash.h */,
+				7B88C8C2168BBF12000D6573 /* kernel_includes */,
+				7B90F1EC166ECD4E00DD5FC6 /* Supporting Files */,
+			);
+			path = hydra;
+			sourceTree = "<group>";
+		};
+		7B90F1EC166ECD4E00DD5FC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B90F1ED166ECD4E00DD5FC6 /* hydra-Info.plist */,
+				7B90F1EE166ECD4E00DD5FC6 /* InfoPlist.strings */,
+				7B90F1F3166ECD4E00DD5FC6 /* hydra-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7B90F1E2166ECD4E00DD5FC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B88C8C7168BBF37000D6573 /* proc.h in Headers */,
+				7B88C8CE168BC316000D6573 /* kernel_info.h in Headers */,
+				7B88C8DA168BCCBA000D6573 /* cpu_protections.h in Headers */,
+				7B88C8DC168BCCBA000D6573 /* idt.h in Headers */,
+				7B88C8E2168BD887000D6573 /* suspend_proc.h in Headers */,
+				7B88C8E6168BF216000D6573 /* kernel_control.h in Headers */,
+				7B4E00E2168C9D5F0014D6A3 /* uthash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7B90F1E5166ECD4E00DD5FC6 /* hydra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B90F1F6166ECD4E00DD5FC6 /* Build configuration list for PBXNativeTarget "hydra" */;
+			buildPhases = (
+				7B90F1E0166ECD4E00DD5FC6 /* Sources */,
+				7B90F1E1166ECD4E00DD5FC6 /* Frameworks */,
+				7B90F1E2166ECD4E00DD5FC6 /* Headers */,
+				7B90F1E3166ECD4E00DD5FC6 /* Resources */,
+				7B90F1E4166ECD4E00DD5FC6 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hydra;
+			productName = hydra;
+			productReference = 7B90F1E6166ECD4E00DD5FC6 /* hydra.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B90F1DB166ECD4E00DD5FC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Put.as;
+			};
+			buildConfigurationList = 7B90F1DE166ECD4E00DD5FC6 /* Build configuration list for PBXProject "hydra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B90F1D9166ECD4E00DD5FC6;
+			productRefGroup = 7B90F1E7166ECD4E00DD5FC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B90F1E5166ECD4E00DD5FC6 /* hydra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B90F1E3166ECD4E00DD5FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B90F1F0166ECD4E00DD5FC6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		7B90F1E4166ECD4E00DD5FC6 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B90F1E0166ECD4E00DD5FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B90F1F2166ECD4E00DD5FC6 /* hydra.c in Sources */,
+				7B88C8CD168BC316000D6573 /* kernel_info.c in Sources */,
+				7B88C8D9168BCCBA000D6573 /* cpu_protections.c in Sources */,
+				7B88C8DB168BCCBA000D6573 /* idt.c in Sources */,
+				7B88C8E1168BD887000D6573 /* suspend_proc.c in Sources */,
+				7B88C8E5168BF216000D6573 /* kernel_control.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B90F1EE166ECD4E00DD5FC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B90F1EF166ECD4E00DD5FC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B90F1F4166ECD4E00DD5FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B90F1F5166ECD4E00DD5FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B90F1F7166ECD4E00DD5FC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hydra/hydra-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "hydra/hydra-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = put.as.hydra;
+				MODULE_START = hydra_start;
+				MODULE_STOP = hydra_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		7B90F1F8166ECD4E00DD5FC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hydra/hydra-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "hydra/hydra-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = put.as.hydra;
+				MODULE_START = hydra_start;
+				MODULE_STOP = hydra_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B90F1DE166ECD4E00DD5FC6 /* Build configuration list for PBXProject "hydra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B90F1F4166ECD4E00DD5FC6 /* Debug */,
+				7B90F1F5166ECD4E00DD5FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B90F1F6166ECD4E00DD5FC6 /* Build configuration list for PBXNativeTarget "hydra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B90F1F7166ECD4E00DD5FC6 /* Debug */,
+				7B90F1F8166ECD4E00DD5FC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B90F1DB166ECD4E00DD5FC6 /* Project object */;
+}
