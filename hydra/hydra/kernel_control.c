@@ -290,6 +290,16 @@ ctl_set(kern_ctl_ref ctl_ref, u_int32_t unit, void *unitinfo, int opt, void *dat
             }
             break;
         }
+		case REMOVE_ALL_APPS:
+		{
+			targets_t temp;
+			targets_t target;
+			HASH_ITER(hh, g_targets_list, target, temp) {
+				_FREE(target->name, M_ZERO);
+				HASH_DEL(g_targets_list, target);
+				_FREE(target, M_ZERO);
+			}
+		}
         default:
             error = ENOTSUP;
             break;

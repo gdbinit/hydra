@@ -61,8 +61,9 @@
 
 #define BUNDLE_ID   "put.as.hydra"
 
-#define ADD_APP     0
-#define REMOVE_APP  1
-#define GET_PID     2
+#define ADD_APP         0
+#define REMOVE_APP      1
+#define GET_PID         2 // This isn't used anywhere
+#define REMOVE_ALL_APPS 3
 
 #endif
