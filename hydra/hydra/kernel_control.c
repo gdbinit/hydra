@@ -299,6 +299,8 @@ ctl_set(kern_ctl_ref ctl_ref, u_int32_t unit, void *unitinfo, int opt, void *dat
 				HASH_DEL(g_targets_list, target);
 				_FREE(target, M_ZERO);
 			}
+			
+			break;
 		}
         default:
             error = ENOTSUP;
