@@ -207,7 +207,7 @@ static int
 ctl_get(kern_ctl_ref ctl_ref, u_int32_t unit, void *unitinfo, int opt, void *data, size_t *len)
 {
     int		error = 0;
-	size_t  valsize;
+	size_t  valsize = 0;
 	void    *buf = NULL;
 	switch (opt)
     {
@@ -294,7 +294,8 @@ ctl_set(kern_ctl_ref ctl_ref, u_int32_t unit, void *unitinfo, int opt, void *dat
 		{
 			targets_t temp;
 			targets_t target;
-			HASH_ITER(hh, g_targets_list, target, temp) {
+			HASH_ITER(hh, g_targets_list, target, temp)
+            {
 				_FREE(target->name, M_ZERO);
 				HASH_DEL(g_targets_list, target);
 				_FREE(target, M_ZERO);
