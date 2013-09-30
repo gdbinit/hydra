@@ -99,13 +99,13 @@ init_kernel_info(kernel_info_t kernel_info)
     if (kernel_header == NULL)
     {
         LOG_MSG("[ERROR] Failed to allocate memory for kernel mach-o header!\n");
-        return KERN_FAILURE;
+        goto failure;
     }
     // read and process kernel header from filesystem
     if (get_kernel_mach_header(kernel_header, kernel_vnode) ||
         process_mach_header(kernel_header, kernel_info))
     {
-        return KERN_FAILURE;
+        goto failure;
     }
     // compute kaslr slide
     kernel_info->running_text_addr = get_running_text_address();
@@ -120,17 +120,26 @@ init_kernel_info(kernel_info_t kernel_info)
     if (kernel_info->linkedit_buf == NULL)
     {
         LOG_MSG("[ERROR] Failed to allocate memory for linkedit buffer!\n");
-        _FREE(kernel_header, M_ZERO);
-        return KERN_FAILURE;
+        goto failure;
     }
     // read linkedit from filesystem
     if (get_kernel_linkedit(kernel_vnode, kernel_info))
     {
-        return KERN_FAILURE;
+        goto failure;
     }
 
+success:
     _FREE(kernel_header, M_ZERO);
+    vnode_put(kernel_vnode);
     return KERN_SUCCESS;
+    
+failure:
+    if (kernel_header != NULL)
+    {
+        _FREE(kernel_header, M_ZERO);
+    }
+    vnode_put(kernel_vnode);
+    return KERN_FAILURE;
 }
 
 /*
